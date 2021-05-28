@@ -52,7 +52,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_BOOT_HEADER_VERSION := 3
-VENDOR_CMDLINE := "console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm androidboot.init_fatal_reboot_target=recovery"
+VENDOR_CMDLINE := "console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm androidboot.init_fatal_reboot_target=recovery"
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
 
 #DTB/DTBO
@@ -140,7 +140,7 @@ BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 30720000
 BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 30720000
 endif
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 30720000
-BOARD_SUPER_PARTITION_SIZE := 6536585216
+BOARD_SUPER_PARTITION_SIZE := 7722295296
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -149,7 +149,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system product odm system_ext vendor
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 6532390912
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 7722295296
 BOARD_USES_PRODUCTIMAGE := true
 BOARD_USES_SYSTEM_EXTIMAGE := true
 TARGET_COPY_OUT_PRODUCT := product
