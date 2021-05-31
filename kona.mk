@@ -297,10 +297,10 @@ PRODUCT_PACKAGES += \
 # PowerStats
 PRODUCT_PACKAGES += \
     android.hardware.power.stats@1.0-service.mock
- 
-# Prebuilt Packages
+
+# Gcam Go
 PRODUCT_PACKAGES += \
-    GCamGo   
+    GCamGOPrebuilt
 
 # QMI
 PRODUCT_PACKAGES += \
