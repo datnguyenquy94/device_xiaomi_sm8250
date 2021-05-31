@@ -7,3 +7,9 @@ ro.control_privapp_permissions=log
 #Camera Support
 vendor.camera.aux.packagelist=org.lineageos.snap,com.google.android.GoogleCamera
 ro.control_privapp_permissions=log
+
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
+# Graphics
+vendor.display.disable_rotator_downscale=1
