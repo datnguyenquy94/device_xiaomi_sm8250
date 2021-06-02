@@ -115,9 +115,6 @@ $(call inherit-product, $(LOCAL_PATH)/kona/display/display.mk)
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
-#EqualizerFX
-#PRODUCT_PACKAGES += \
-    EqualizerFX
     
 # Exclude sensor from InputManager
 PRODUCT_COPY_FILES += \
@@ -158,15 +155,15 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     libipanat \
     liboffloadhal
-        
+ 
 # Libshim
 #PRODUCT_PACKAGES += \
     libhidlbase_shim
-    
+
 # Libshim
 #PRODUCT_PACKAGES += \
-    libandroid_runtime_shim
-    
+    libandroid_runtime_shim   
+        
 # Lights
 PRODUCT_PACKAGES += \
     lights.kona \
