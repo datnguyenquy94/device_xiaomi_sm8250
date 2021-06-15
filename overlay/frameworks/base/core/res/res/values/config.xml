@@ -258,7 +258,7 @@
         <item>7</item>
     </integer-array>
     
-        <!-- Vibrator pattern for feedback about touching a virtual key -->
+    <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
         <item>45</item>
@@ -266,13 +266,10 @@
         <item>65</item>
     </integer-array>
     
-     <!-- Should the pinner service pin the Camera application? -->
-    <bool name="config_pinnerCameraApp">true</bool>
-    
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
     
-        <!-- Default files to pin via Pinner Service -->
+    <!-- Default files to pin via Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>/system/framework/services.jar</item>
         <item>/system/framework/oat/arm64/services.odex</item>
@@ -306,7 +303,7 @@
         <item>/system/lib64/libsurfaceflinger.so</item>
     </string-array>
     
-      <!-- An Array of "[Connection name],[ConnectivityManager.TYPE_xxxx],
+    <!-- An Array of "[Connection name],[ConnectivityManager.TYPE_xxxx],
          [associated radio-type],[priority],[restoral-timer(ms)],[dependencyMet]  -->
     <!-- the 5th element "resore-time" indicates the number of milliseconds to delay
          before automatically restore the default connection.  Set -1 if the connection
