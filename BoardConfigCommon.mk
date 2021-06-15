@@ -195,6 +195,9 @@ endif
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2021-04-01
+
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
