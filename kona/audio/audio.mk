@@ -3,6 +3,7 @@ AUDIO_FEATURE_ENABLED_DLKM := true
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := false
 AUDIO_FEATURE_ENABLED_DTS_EAGLE := false
 AUDIO_FEATURE_ENABLED_DYNAMIC_LOG := false
+AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_HW_ACCELERATED_EFFECTS := false
@@ -65,6 +66,7 @@ PRODUCT_PACKAGES += \
     libqahw \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
+    audio_amplifier.kona \
     liba2dpoffload \
     libaudiopreprocessing \
     libbatterylistener \
