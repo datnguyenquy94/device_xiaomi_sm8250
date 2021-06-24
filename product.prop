@@ -13,3 +13,4 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Graphics
 vendor.display.disable_rotator_downscale=1
+ro.config.avoid_gfx_accel=true
