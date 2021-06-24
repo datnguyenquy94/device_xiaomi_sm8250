@@ -151,6 +151,7 @@ persist.vendor.hvdcp_opti.disallowed=1
 
 #Radio Services
 ro.vendor.radio.5g=3
+persist.vendor.radio.aosp_usr_pref_sel=true
 persist.rcs.supported=0
 persist.vendor.radio.apm_sim_not_pwdn=1
 keyguard.no_require_sim=true 
