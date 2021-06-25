@@ -111,14 +111,14 @@ feature_id=$(((reg_val >> 20) & 0xFF))
 log -t BOOT -p i "feature id '$feature_id'"
 if [ $feature_id == 6 ]; then
 	echo " SKU Configured : SA6145"
-	echo 748800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
-	echo 1017600 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
-	echo 1017600 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
 	echo 748800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 	echo 748800 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
 	echo 748800 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
@@ -137,14 +137,14 @@ if [ $feature_id == 6 ]; then
 	setprop vendor.sku_name "SA6145"
 elif [ $feature_id == 5 ]; then
 	echo "SKU Configured : SA6150"
-	echo 748800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
-	echo 1017600 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
-	echo 1017600 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
 	echo 998400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 	echo 998400 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
 	echo 998400 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
@@ -163,14 +163,14 @@ elif [ $feature_id == 5 ]; then
 	setprop vendor.sku_name "SA6150"
 elif [ $feature_id == 4 ] || [ $feature_id == 3 ]; then
 	echo "SKU Configured : SA6155"
-	echo 748800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
-	echo 1017600 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
-	echo 1017600 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
 	echo 1593600 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 	echo 1593600 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
 	echo 1593600 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
@@ -189,14 +189,14 @@ elif [ $feature_id == 4 ] || [ $feature_id == 3 ]; then
 	setprop vendor.sku_name "SA6155"
 else
 	echo "SKU Configured : SA6155"
-	echo 748800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
-	echo 748800 > /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
-	echo 1017600 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
-	echo 1017600 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
+	echo 0 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
 	echo 1593600 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 	echo 1593600 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
 	echo 1593600 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
