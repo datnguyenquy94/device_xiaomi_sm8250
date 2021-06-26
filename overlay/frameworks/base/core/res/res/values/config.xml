@@ -435,7 +435,7 @@
     <string name="db_wal_sync_mode">OFF</string>
         
      <!-- Flag indicating whether we should enable the adaptive sleep.-->
-    <bool name="config_adaptive_sleep_available">false</bool>
+    <bool name="config_adaptive_sleep_available">true</bool>
     
          <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
