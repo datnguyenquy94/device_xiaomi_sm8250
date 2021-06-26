@@ -77,7 +77,7 @@
      
     
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
-     <bool name="config_intrusiveNotificationLed">false</bool>
+     <bool name="config_intrusiveNotificationLed">true</bool>
     
  
     <!-- If true, the doze component is not started until after the screen has been
@@ -285,7 +285,7 @@
          to maximize power savings but not all devices support it.
          Refer to power.h for details.
     -->
-    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
     
     <!-- SystemInfo Sys Nodes -->
      <integer name="config_sysCPUTempMultiplier">1000</integer>
