@@ -19,8 +19,7 @@
 
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
-     
-     
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
         <!-- Boolean indicating if current platform supports HFP inband ringing -->
@@ -195,7 +194,7 @@
          before automatically restore the default connection.  Set -1 if the connection
          does not require auto-restore. -->
     <!-- the 6th element indicates boot-time dependency-met value. -->
-     <array name="networkAttributes">
+    <array name="networkAttributes">
         <item>wifi,1,1,1,-1,true</item>
         <item>mobile,0,0,0,-1,true</item>
         <item>mobile_mms,2,0,4,60000,true</item>
@@ -433,11 +432,9 @@
          running in WAL mode.
          Choices are: FULL, NORMAL, OFF. -->
     <string name="db_wal_sync_mode">OFF</string>
-        
-     <!-- Flag indicating whether we should enable the adaptive sleep.-->
-    <bool name="config_adaptive_sleep_available">true</bool>
+
     
-         <!-- Configure mobile tcp buffer sizes in the form:
+     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
          If no value is found for the rat-name in use, the system default will be applied.
      -->
@@ -455,10 +452,14 @@
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </array>
     
-     <!-- Flag specifying whether WFC over IMS is available on device -->
-       <bool name="config_device_wfc_ims_available">true</bool>
-       
+    <!-- Flag specifying whether WFC over IMS is available on device -->
+    <bool name="config_device_wfc_ims_available">true</bool>
+        
+    
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
-      <bool name="config_speed_up_audio_on_mt_calls">true</bool>
-           
+    <bool name="config_speed_up_audio_on_mt_calls">true</bool>
+
+    <!-- Flag indicating whether we should enable the adaptive sleep.-->
+    <bool name="config_adaptive_sleep_available">true</bool>
+
 </resources>

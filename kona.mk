@@ -116,6 +116,10 @@ $(call inherit-product, $(LOCAL_PATH)/kona/display/display.mk)
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
+#EqualizerFX
+#PRODUCT_PACKAGES += \
+    EqualizerFX
+    
 # Exclude sensor from InputManager
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml \

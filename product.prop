@@ -11,6 +11,9 @@ ro.control_privapp_permissions=log
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Disable FOD
+ro.fingerprint.inscreen_disabled=true
+
 # Graphics
 vendor.display.disable_rotator_downscale=1
 ro.config.avoid_gfx_accel=true
