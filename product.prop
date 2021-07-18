@@ -16,7 +16,6 @@ ro.fingerprint.inscreen_disabled=true
 
 # Graphics
 vendor.display.disable_rotator_downscale=1
-ro.config.avoid_gfx_accel=true
 
 # ZRam
 ro.zram.mark_idle_delay_mins=60
