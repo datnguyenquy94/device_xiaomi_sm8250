@@ -116,23 +116,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_scaler=0 \
     vendor.display.disable_excl_rect=0 \
     vendor.display.disable_excl_rect_partial_fb=1 \
-    vendor.display.comp_mask=0 \
     vendor.display.enable_posted_start_dyn=1 \
     vendor.display.enable_optimize_refresh=1 \
-    vendor.display.use_smooth_motion=1\
+    vendor.display.use_smooth_motion=0\
     vendor.display.comp_mask=2 \
     vendor.display.enable_async_powermode=1 \
     vendor.display.qdcm.mode_combine=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.disable_rotator_ubwc=1 \
-    vendor.display.disable_offline_rotator=1 \
-    vendor.display.normal_noc_efficiency_factor=0.85 \
-    vendor.display.camera_noc_efficiency_factor=0.70 \
-    vendor.display.disable_layer_stitch=0 \
-    vendor.display.secure_preview_buffer_format=420_sp \
-    vendor.gralloc.secure_preview_buffer_format=420_sp 
-
+    vendor.display.disable_offline_rotator=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_gl_backpressure=1 \

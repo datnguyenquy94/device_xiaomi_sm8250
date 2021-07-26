@@ -1,3 +1,5 @@
+#Audio target definitions for kona
+
 AUDIO_FEATURE_ENABLED_AHAL_EXT := false
 AUDIO_FEATURE_ENABLED_DLKM := true
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := false
@@ -30,7 +32,6 @@ AUDIO_FEATURE_ENABLED_CUSTOMSTEREO := true
 AUDIO_FEATURE_ENABLED_FLUENCE := true
 AUDIO_FEATURE_ENABLED_HDMI_EDID := true
 AUDIO_FEATURE_ENABLED_HDMI_PASSTHROUGH := true
-#AUDIO_FEATURE_ENABLED_KEEP_ALIVE := true
 AUDIO_FEATURE_ENABLED_DISPLAY_PORT := true
 AUDIO_FEATURE_ENABLED_HFP := true
 AUDIO_FEATURE_ENABLED_INCALL_MUSIC := true
@@ -42,8 +43,6 @@ AUDIO_FEATURE_ENABLED_USB_BURST_MODE := true
 AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
 AUDIO_FEATURE_ENABLED_BATTERY_LISTENER := true
 AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
-#AUDIO_FEATURE_ENABLED_3D_AUDIO := true
-##AUDIO_FEATURE_FLAGS
 AUDIO_FEATURE_ENABLED_CONCURRENT_CAPTURE := true
 AUDIO_FEATURE_ENABLED_COMPRESS_INPUT := true
 AUDIO_FEATURE_ENABLED_COMPRESS_CAPTURE := false
@@ -52,8 +51,6 @@ AUDIO_FEATURE_ENABLED_DYNAMIC_ECNS := true
 AUDIO_FEATURE_ENABLED_ANC_HEADSET := true
 AUDIO_FEATURE_ENABLED_SOURCE_TRACKING := true
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
-
-
 
 # for HIDL related packages
 PRODUCT_PACKAGES += \
@@ -96,19 +93,8 @@ PRODUCT_PACKAGES += \
     tinymix \
     tinyplay \
     libtinycompress
-
-PRODUCT_PACKAGES += \
-	capture.sh \
-	capture_headset.sh\
-	playback.sh\
-	playback_headset.sh\
-	setup_backmic2headphone.sh\
-	setup_backmic2headphone.sh\
-	setup_headsetmic2headphone.sh\
-	setup_mainmic2headphone.sh\
-	setup_topmic2headphone.sh\
-	teardown_loopback.sh
-	
+    
+# Export Configs
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/xiaomi/sm8250-common/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 PRODUCT_COPY_FILES += \
@@ -234,8 +220,6 @@ ro.vendor.audio.sos=true
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.audio.soundfx.usb=true
 
-
-
 #parser input buffer size(256kb) in byte stream mode
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.parser.ip.buffer.size=262144
@@ -294,9 +278,6 @@ vendor.audio.volume.headset.gain.depcal=true
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.audio.fluence.voicecomm=true
 
-
-USE_XML_AUDIO_POLICY_CONF := 1
-
 #enable keytone FR
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.hal.output.suspend.supported=true
@@ -336,7 +317,6 @@ vendor.audio.feature.battery_listener.enable=true \
 vendor.audio.feature.compr_cap.enable=false \
 vendor.audio.feature.compress_in.enable=true \
 vendor.audio.feature.compress_meta_data.enable=true \
-vendor.audio.feature.compr_voip.enable=true \
 vendor.audio.feature.concurrent_capture.enable=true \
 vendor.audio.feature.custom_stereo.enable=true \
 vendor.audio.feature.display_port.enable=true \
@@ -392,8 +372,6 @@ vendor.audio.offload.track.enable=false \
 vendor.audio.spkcal.copy.inhal=true \
 vendor.audio.usb.disable.sidetone=true
 
-
-
 # for HIDL related packages
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.audiohalext@1.0 \
@@ -417,12 +395,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
 
-
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DEV_ARBI)),true)
 PRODUCT_PACKAGES_DEBUG += \
     libaudiodevarb
 endif
-
 
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_3D_AUDIO)),true)
@@ -432,9 +408,7 @@ PRODUCT_PACKAGES_DEBUG += \
     libhoaeffects_csim
 endif
 
-
 ifeq ($(strip $(BOARD_SUPPORTS_SOUND_TRIGGER)),true)
 PRODUCT_PACKAGES_DEBUG += \
     libadpcmdec
 endif
-
